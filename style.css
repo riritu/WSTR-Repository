@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
+
+body {
+    font-family: "Reem Kufi Fun";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    min-width: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+header  {
+    font-size: 1.2em;
+    position: sticky;
+    background-color: #24252a;
+    width: 100%;
+    color: #edf0f1;
+    opacity: 0.8;
+}
+
+header:hover {
+    opacity: 1.0;
+}
+
+header h1 {
+    position: absolute;
+    margin-top: 20px;
+    left: 20%;
+}
+
+header {
+    top: 0;
+    height: 10vh;
+}
+
+
+#hero h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color:#f63562;
+    animation: text_reveal_a 1s ease;
+    animation-delay: 1s;
+}
+
+#hero h2 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color:#9668ba;
+    animation: text_reveal_b 1s ease;
+    animation-delay: 1s;
+}
+
+#hero h3 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: yellow;
+    animation: text_reveal_c 1s ease;
+    animation-delay: 1s;
+}
+
+#hero {
+    background-color: #edf0f1;
+    overflow: hidden;
+    height: 80vh;
+    width: 100%;
+}       
+#hero h3 {
+    font-size: 3.6em;
+    font-weight: bold;
+    color: transparent;
+    position: relative;
+    left: 10%;
+    top: 21%;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+#hero h2 {
+    font-size: 6em;
+    font-weight: bold;
+    color: transparent;
+    position: relative;
+    left: 9.9%;
+    top: 26%;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+#hero h1 {
+    font-size: 3.6em;
+    font-weight: normal;
+    color: transparent;
+    position: relative;
+    left: 10%;
+    top: 30%;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+
+.msg.container {
+    position: relative;
+    left: 18%;
+    text-align: center;
+    background-color: #24252a;
+    border-radius: 25px;
+    width: 300px;
+    padding: 50px;
+    margin: 50px;;
+}
+
+#about h1 {
+    margin-top: 13%;
+    margin-bottom: 1%;
+    font-size: 2em;
+    text-align: center;
+}
+
+.msg.container p {
+    border-radius: 10px;
+    color: #edf0f1;
+}
+
+
+
+.nav_links {
+  margin-top: 30px;
+  list-style: none;
+  position: absolute;
+  width: 100%;
+}
+
+.nav_links li, button{   
+    display: inline;
+    padding: 0px 20px;
+}
+
+.nav_links a {
+    position: relative;
+    left: 55%;
+    top: 20%;
+    color: #edf0f1;
+    text-decoration: none;
+
+}
+
+h1 a {
+    color:#edf0f1;
+    text-decoration: none;
+}
+button {    
+    margin-top: 30px;
+    position: relative;
+    left: 80%;
+    font-family: "Reem Kufi Fun";
+    color: #edf0f1; 
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s; 
+}
+
+button:hover {
+    background-color: rgba(0,136,169,1);
+}
+
+h1 {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.me1 {
+    position: absolute;
+    top: 45%;
+    right: 450px;
+    width: 14%;
+    clip-path: circle();
+}
+
+.me2 {
+    position: absolute;
+    top: 10%;
+    right: 750px;
+    width: 14%;
+    clip-path: circle();
+}
+
+.me3 {
+    position: absolute;
+    top: 10%;
+    right: 150px;
+    width: 14%;
+    clip-path: circle();
+}
+
+
+.circle_A {
+    position: relative;
+    bottom: 40%;
+    left: 55%;
+    height: 60px;
+    width: 60px;
+    background-color: #9668ba;
+    border-radius: 50%;
+}
+
+.circle_B {
+    position: relative;
+    top: -27%;
+    left: 100px;
+    height: 40px;
+    width: 40px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.circle_C {
+    position: relative;
+    bottom: 0%;
+    left: 95%;
+    height: 35px;
+    width: 35px;
+    background-color: #f63562;
+    border-radius: 50%;
+}
+
+.circle_D {
+    position: relative;
+    bottom: 0%;
+    left: 32%;
+    height: 400px;
+    width: 400px;
+    background-color: #f63562;
+    border-radius: 50%;
+}
+
+.gallery.container {
+    margin-top: 15%;
+}
+
+.gallery-grid {
+    --gap: 150px;
+    --num-cols: 3;
+    --row-height: 350px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.gallery > img {
+    width: 100%;
+    height: 120%;
+}
+.gallery h1 {
+    font-size: 1.0em;
+}
+
+.gallery div {
+    font-size: 0.9em;
+}
+.gallery {
+    margin-top: 0%;
+    margin-bottom: 5%;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.gallery-grid div, img {
+    background-color:rgb(211, 79, 101)z;
+    color:#24252a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+
+}
+
+
+img:hover {
+    box-shadow: 0 0 3px 2px rgb(211, 79, 101);
+}
+
+.title h1 {
+    font-size: 2em;
+}
+
+.title div {
+    font-size: 1.1em;
+}
+
+footer {
+    background-color: #24252a;
+    text-align: center;
+    height: 15vh;
+}
+
+
+footer div {
+    position: relative;
+    bottom: -19%;
+    color: #edf0f1;
+    font-size: 1.2em;
+}
+
+.footer_links li {
+    padding: 0px 150px;
+    list-style: none;
+    display: inline;
+}
+
+.footer_links a {
+    text-decoration: none ;
+    color: #edf0f1;
+}
+
+a:hover {
+    color: rgb(211, 79, 101);
+}
+
+@keyframes text_reveal_a {
+    50%{ 
+        width: 19%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 19%;
+    }
+    
+}
+
+@keyframes text_reveal_b {
+    50%{ 
+        width: 22.2%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 22.2%;
+    }
+    
+}
+
+@keyframes text_reveal_c {
+    50%{ 
+        width: 9%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 9%;
+    }
+    
+}
+
+@keyframes text_reveal {
+    100%{
+        color: #24252a;
+    }
+    
+}
